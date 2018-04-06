@@ -1,6 +1,17 @@
 /* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
+
+/* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
 
 html {
 	color: #222;
