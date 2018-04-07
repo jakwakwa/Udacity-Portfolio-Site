@@ -92,6 +92,7 @@ svg {
 	}
 
 	.header--logo {
+		width: 50px;
 		align-self: center;
 	}
 
@@ -108,7 +109,7 @@ svg {
 	}
 
 /* ==========================================================================
-   Main Image
+   Main Image Styles
    ========================================================================== */
 
 	.mainImage--container {
@@ -119,7 +120,33 @@ svg {
 		width: 100%;
 	}
 
+	/* ==========================================================================
+		Featured Work Styles
+		========================================================================== */
 
+	.featured-container {
+		padding: 0 20px 0 20px;
+	}
+
+	.featured-container .featured-heading {
+		color: #7d97ad;
+	}
+
+	.featured-work--container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.featured-work--box {
+		border: 1px solid #7d97ad;
+		margin: 20px 0 20px 0;
+		padding: 20px;
+	}
+
+	.featured-work--box img {
+		width: 100%;
+	}
 
 
 
