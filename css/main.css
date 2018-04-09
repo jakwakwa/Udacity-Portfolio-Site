@@ -1,12 +1,12 @@
 /* ==========================================================================
-   Fonts
-   ========================================================================== */
+  Fonts
+========================================================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600');
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+  Base styles: opinionated defaults
+========================================================================== */
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -24,18 +24,21 @@ html {
  */
 
 ::-moz-selection {
-	background: #2a292c;
+	background: #2a363b;
+	color: #fff;
 	text-shadow: none;
 }
 
 ::selection {
-	background: #2a292c;
+	background: #2a363b;
+	color: #fff;
 	text-shadow: none;
 }
 
 /*
  * A better looking default horizontal rule
  */
+
 hr {
 	display: block;
 	height: 1px;
@@ -49,151 +52,172 @@ hr {
  * Remove the gap between
  * images and the bottom of their containers:
  */
+
 img,
 svg {
 	vertical-align: middle;
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+  Container Styles
+========================================================================== */
 
-.browserupgrade {
-	margin: 0.2em 0;
-	background: #ccc;
-	color: #000;
-	padding: 0.2em 0;
+.container {
+	width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+
+	.container {
+		width: 1000px;
+		margin: 0 auto;
+	}
+
 }
 
 /* ==========================================================================
-   Container Styles
-	 ========================================================================== */
+  Header Styles
+========================================================================== */
 
-	.container {
-		width: 100%;
-	}
+.header-container {
+	background-color: #2a363b;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
 
-	@media only screen and (min-width: 1000px) {
-		.container {
-			width: 1000px;
-			margin: 0 auto;
-		}
-	}
+.header-logo {
+	width: 50px;
+	align-self: center;
+}
 
-/* ==========================================================================
-   Header Styles
-   ========================================================================== */
+.header-info {
+	color: #fff;
+}
 
-	.header--container {
-		background-color: #2a292c;
-		display: flex;
-		justify-content: space-between;
-		padding: 20px;
-	}
+.header-info h1 {
+	margin: 0;
+}
 
-	.header--logo {
-		width: 50px;
-		align-self: center;
-	}
-
-	.header-info--container {
-		color: #fff;
-	}
-
-	.header-info--container h1 {
-		margin: 0;
-	}
-
-	.header-info--container p {
-		margin: 0;
-	}
+.header-info p {
+	margin: 0;
+	text-transform: uppercase;
+}
 
 /* ==========================================================================
-   Main Image Styles
-   ========================================================================== */
+  Main Image Styles
+========================================================================== */
 
-	.mainImage--container {
-		padding: 0 20px 0 20px;
-	}
+.mainImg-container {
+	padding: 0;
+}
 
-	.mainImage--container img {
-		width: 100%;
-	}
+.mainImg-container figure {
+	position: relative;
+	margin: 0;
+}
 
-	/* ==========================================================================
-		Featured Work Styles
-		========================================================================== */
+.mainImg-container img {
+	width: 100%;
+}
 
-	.featured-container {
-		padding: 0 20px 0 20px;
-	}
+.mainImg-container figure figcaption {
+	position: absolute;
+	bottom: 0;
+	background-color: #2a363b;
+	color: #fff;
+	font-size: 10px;
+	padding: 5px 10px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
 
-	.featured-container .featured-heading {
-		color: #7d97ad;
-	}
+.mainImg-container:hover figure figcaption {
+	opacity: 1;
+}
+
+/* ==========================================================================
+	Featured Work Styles
+========================================================================== */
+
+.featured-container {
+	padding: 0 20px 50px 20px;
+}
+
+.featured-container .featured-heading {
+	color: #2b373b;
+	text-transform: uppercase;
+}
+
+.featured-work--container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.featured-work--box {
+	background: #2a363b;
+	border-radius: 4px;
+	margin: 20px 0 20px 0;
+	padding: 20px;
+}
+
+.featured-work--box .img-container {
+	border: 4px solid #4c4c4c;
+	overflow: hidden;
+}
+
+.featured-work--box img {
+	width: 100%;
+}
+
+.featured-work--box h3 {
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 20px 0 10px 0;
+}
+
+.featured-work--box a {
+	font-size: 10px;
+	color: #5d9cd2;
+	text-decoration: none;
+	transition: color 0.5s ease-in-out;
+}
+
+.featured-work--box a:hover {
+	color: #a7cff1;
+}
+
+@media only screen and (min-width: 750px) {
 
 	.featured-work--container {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
+		flex-direction: row;
 	}
 
 	.featured-work--box {
-		border: 1px solid #7d97ad;
-		margin: 20px 0 20px 0;
-		padding: 20px;
+		margin: 0 10px;
+	}
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+	.featured-work--box .img-container {
+		height: auto;
 	}
 
 	.featured-work--box img {
+		height: auto;
 		width: 100%;
 	}
 
+	.featured-work--box h3 {
+		font-size: 16px;
+	}
 
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-	display: none !important;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-	visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- */
-
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
-/* ==========================================================================
-   Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
+	.featured-work--box a {
+		font-size: 12px;
+	}
 
 }
