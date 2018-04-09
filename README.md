@@ -1,11 +1,12 @@
-# The humans responsible & technology colophon
+# Build a Portfolio site
 
-# TEAM
+## As part of the Front-End Web Developer Nanodegree Program on Udacity
 
-    Jaco Kotzee -- Frontend Web Developer -- @doodlesdigital_
+# Sole Contributor
+
+  Jaco Kotzee -- Frontend Web Developer -- @doodlesdigital_
 
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Normalize.css
+  CSS3, HTML5, Normalize.css
