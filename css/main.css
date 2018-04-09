@@ -84,6 +84,7 @@ svg {
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 2px solid #ed855b;
 }
 
 .header-logo {
@@ -109,6 +110,7 @@ svg {
 ========================================================================== */
 
 .mainImg-container {
+	margin: 10px 0;
 	padding: 0;
 }
 
@@ -164,6 +166,7 @@ svg {
 	border-radius: 4px;
 	margin: 20px 0 20px 0;
 	padding: 20px;
+	text-align: center;
 }
 
 .featured-work--box .img-container {
