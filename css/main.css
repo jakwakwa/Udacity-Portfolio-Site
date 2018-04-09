@@ -112,6 +112,10 @@ svg {
 	padding: 0;
 }
 
+.mainImg-container h2 {
+	display: none;
+}
+
 .mainImg-container figure {
 	position: relative;
 	margin: 0;
