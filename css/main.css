@@ -196,22 +196,44 @@ svg {
 	color: #a7cff1;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 636px) {
 
 	.featured-work--container {
 		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.featured-work--box {
-		margin: 0 10px;
+		margin: 10px 10px;
+	}
+
+	.featured-work--box .img-container {
+		height: auto;
+		width: 250px;
+	}
+
+	.featured-work--box h3 {
+		font-size: 14px;
+	}
+
+	.featured-work--box a {
+		font-size: 11px;
 	}
 
 }
 
 @media only screen and (min-width: 1000px) {
 
-	.featured-work--box .img-container {
-		height: auto;
+	.featured-work--container {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+
+	.featured-work--box {
+		margin: 0 20px;
+		width: 300px;
 	}
 
 	.featured-work--box img {
